@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #409dac, #083d40);
+}
+a {
+  text-decoration: none;
+  color: #083d40;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li::before {
+  content: "🍀";
+  margin-right: 8px;
+}
+/*----------------- Fonts -----------------*/
+.navigation-a {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px #94f3f3;
+}
+.hw-heading {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  color: #083d40;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #94f3f3;
+}
+.first-h2 {
+  font-family: "Roboto", sans-serif;
+  color: #083d40;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 3px #94f3f3;
+}
+.Section3-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px #083d40;
+}
+.title h2,
+.grid-subtitle h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px #083d40;
+}
+.footer-wrapper h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #aaeef1;
+  white-space: nowrap;
+}
+
+/*  ----------------- Header ----------------- */
+
+header {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #083d40;
+}
+.logo {
+  height: 60px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+/*  ----------------- Main ----------------- */
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+/*  ----------------- Sections common styles ----------------- */
+.section1,
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+/* ----------------- Section 1 ----------------- */
+.flex-d-c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.grid-container1 {
+  background-color: #93bec0;
+  border-radius: 16px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+}
+
+/* ----------------- Section 2 ----------------- */
+.grid-container2 {
+  background-color: #93bec0;
+  border-radius: 16px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  grid-gap: 16px;
+  grid-template-areas:
+    "itm1 itm1 itm2 itm3"
+    "itm4 itm5 itm6 itm6"
+    "itm7 itm5 itm8 itm9";
+}
+.itm1 {
+  grid-area: itm1;
+  background-image: url(images/coffeee-cup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.itm5 {
+  grid-area: itm5;
+  background-image: url(images/flowers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.itm6 {
+  grid-area: itm6;
+  background-image: url(images/thin-flower-in-vase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------- Section3 -----------------*/
+.grid-container3 {
+  background-color: #93bec0;
+  border-radius: 16px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  grid-gap: 16px;
+  grid-template-areas:
+    "item1 item2 item2 item3"
+    "blank item4 item5 item5";
+}
+.item2 {
+  grid-area: item2;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item1 img {
+  box-shadow: 5px 4px 5px #ac9d8d;
+}
+.item2 img {
+  box-shadow: 5px 4px 5px #556161;
+}
+.item3 img {
+  box-shadow: 5px 4px 5px #d0e4eb;
+}
+.item4 img {
+  box-shadow: 5px 4px 5px #949ab0;
+}
+.item5 img {
+  box-shadow: 5px 4px 5px #ead7cb;
+}
+/*----------------- Section 4 -----------------  */
+.grid-container4 {
+  width: 1330px;
+  background-color: #93bec0;
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+  /* grid-template-rows: 160px; */
+  grid-template-areas:
+    "text text text first first"
+    "text2 text2 second blank third"
+    ". four . five ."
+    "image image1 image2 image3 image4";
+  position: relative;
+}
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  right: 40.5%;
+}
+.grid-container4 img {
+  height: 160px;
+}
+.blank {
+  grid-area: blank;
+}
+.title,
+.grid-subtitle {
+  grid-area: text;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.one {
+  grid-area: first;
+}
+.grid-subtitle {
+  grid-area: text2;
+}
+.two {
+  grid-area: second;
+}
+.three {
+  grid-area: third;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: image;
+}
+.seven {
+  grid-area: image1;
+}
+.eight {
+  grid-area: image2;
+}
+.nine {
+  grid-area: image3;
+}
+.ten {
+  grid-area: image4;
+}
+/*----------------- footer -----------------*/
+footer {
+  width: 100%;
+  padding: 25px;
+}
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+}
